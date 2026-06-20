@@ -1,5 +1,5 @@
-import SceneManager from "@/components/scenes/SceneManager";
+import OceanScene from "@/components/scenes/OceanScene";
 
 export default function Home() {
-  return <SceneManager />;
+  return <OceanScene />;
 }

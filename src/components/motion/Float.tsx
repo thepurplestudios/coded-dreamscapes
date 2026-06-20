@@ -18,7 +18,7 @@ export default function Float({
     <motion.div
       animate={{
         y: [-12, 12, -12],
-        x: [-4, 4, -4],
+        x: [-6, 6, -6],
         rotate: [-1, 1, -1],
       }}
       transition={{
