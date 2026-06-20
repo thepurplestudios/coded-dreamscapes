@@ -6,16 +6,23 @@ import { ReactNode } from "react";
 type FloatProps = {
   children: ReactNode;
   delay?: number;
+  duration?: number;
 };
 
-export default function Float({ children, delay = 0 }: FloatProps) {
+export default function Float({
+  children,
+  delay = 0,
+  duration = 8,
+}: FloatProps) {
   return (
     <motion.div
       animate={{
-        y: [-10, 10, -10],
+        y: [-12, 12, -12],
+        x: [-4, 4, -4],
+        rotate: [-1, 1, -1],
       }}
       transition={{
-        duration: 5,
+        duration,
         repeat: Infinity,
         ease: "easeInOut",
         delay,
