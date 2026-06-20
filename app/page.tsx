@@ -1,5 +1,5 @@
-import CloudsScene from "@/components/scenes/CloudsScene";
+import SceneManager from "@/components/scenes/SceneManager";
 
 export default function Home() {
-  return <CloudsScene />;
+  return <SceneManager />;
 }
