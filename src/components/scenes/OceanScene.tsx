@@ -1,6 +1,9 @@
 "use client";
 
 import Wave from "@/components/objects/Wave";
+import Horizon from "@/components/objects/Horizon";
+import OceanSparkle from "@/components/objects/OceanSparkle";
+import Float from "@/components/motion/Float";
 
 export default function OceanScene() {
   return (
@@ -15,14 +18,28 @@ export default function OceanScene() {
         to-white
       "
     >
-      <Wave color="#A8E0FF" opacity={0.4} />
+      <Horizon />
 
-      <div className="bottom-[-40px] absolute w-full">
-        <Wave color="#74C7EC" opacity={0.6} />
+      <div className="absolute left-[20%] top-[60%]">
+        <Float>
+          <OceanSparkle />
+        </Float>
       </div>
 
-      <div className="bottom-[-80px] absolute w-full">
-        <Wave color="#4DA7F3" opacity={1} />
+      <div className="absolute left-[60%] top-[68%]">
+        <Float delay={1}>
+          <OceanSparkle />
+        </Float>
+      </div>
+
+      <Wave color="#BFE9FF" opacity={0.4} duration={18} />
+
+      <div className="absolute bottom-[-30px] w-full">
+        <Wave color="#8DD8FF" opacity={0.7} duration={14} />
+      </div>
+
+      <div className="absolute bottom-[-70px] w-full">
+        <Wave color="#59B9FF" duration={10} />
       </div>
     </section>
   );

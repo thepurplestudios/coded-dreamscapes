@@ -5,18 +5,19 @@ import { motion } from "motion/react";
 type WaveProps = {
   color: string;
   opacity?: number;
+  duration?: number;
 };
 
-export default function Wave({ color, opacity = 1 }: WaveProps) {
+export default function Wave({ color, opacity = 1, duration = 12 }: WaveProps) {
   return (
     <motion.svg
       viewBox="0 0 1440 320"
-      className="absolute bottom-0 w-[120%]"
+      className="absolute bottom-0 w-[130%]"
       animate={{
-        x: [-40, 40, -40],
+        x: [-60, 60, -60],
       }}
       transition={{
-        duration: 12,
+        duration,
         repeat: Infinity,
         ease: "easeInOut",
       }}
@@ -25,16 +26,15 @@ export default function Wave({ color, opacity = 1 }: WaveProps) {
       <path
         fill={color}
         d="
-          M0,192
-          L80,176
-          C160,160,320,128,480,138
-          C640,149,800,203,960,213
-          C1120,224,1280,192,1360,176
-          L1440,160
-          L1440,320
-          L0,320
-          Z
-        "
+        M0,224
+        C120,170 240,170 360,224
+        C480,278 600,278 720,224
+        C840,170 960,170 1080,224
+        C1200,278 1320,278 1440,224
+        L1440,320
+        L0,320
+        Z
+      "
       />
     </motion.svg>
   );
