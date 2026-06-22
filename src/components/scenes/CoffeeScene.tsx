@@ -18,7 +18,7 @@ export default function CoffeeScene() {
         bg-gradient-to-b
         from-[#FFF9F2]
         via-[#FFF3E0]
-        to-[#FFE8D6]
+        to-[#e0bda2]
       "
     >
       <div className="absolute left-[8%] top-[25%]">
