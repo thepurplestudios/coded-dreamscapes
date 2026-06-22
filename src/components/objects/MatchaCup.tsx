@@ -1,4 +1,4 @@
-export default function CoffeeCup() {
+export default function MatchaCup() {
   return (
     <div className="relative">
       <div
@@ -7,7 +7,7 @@ export default function CoffeeCup() {
           w-20
           rounded-b-[28px]
           rounded-t-[18px]
-          bg-[#C08A5D]
+          bg-[#A8D5BA]
           shadow-lg
         "
       />
@@ -21,7 +21,7 @@ export default function CoffeeCup() {
           w-6
           rounded-r-full
           border-4
-          border-[#C08A5D]
+          border-[#A8D5BA]
         "
       />
     </div>
